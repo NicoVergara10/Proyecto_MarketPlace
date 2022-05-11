@@ -1,0 +1,80 @@
+body{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    margin: auto;
+    padding: 100px 0;
+    text-align: center;
+    background-image:url(./img/imagen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.contenedor{  
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    width: 75%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.img_note{
+    width: 50%;
+    border-radius: 10px;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.slogan{
+    font-weight: bold;
+    color: rgb(85, 9, 9);
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+.texto {
+    font-size: 15px;
+}
+
+.detalle{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.btn{
+    background-color: rgb(64, 95, 95);
+    padding: 8px;
+    border-radius: 8px;
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+    border: none;
+    font-weight: 700;
+
+}
+.btn:hover{
+    box-shadow:  0 0 10px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+.envio{
+    color: rgb(118, 182, 23);
+}
+.precio{
+    font-size: 25px;
+    font-weight: bold;
+}
