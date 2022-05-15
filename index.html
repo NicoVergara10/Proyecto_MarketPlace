@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
     <title>MarketPlace</title>
 </head>
 <body>
@@ -19,86 +20,22 @@
     <main>
         <section class="contenedor" >
             <h2>PRODUCTOS</h2>
-            <div class="grid-layout">
-                <div class="pc1">
-                    <hr>
-                    <h2 class="nombre">Notebook Lenovo IdeaPad 15IIL05 </h2>
-                    <img src="img/lenovo.jpg" alt="compu_lenovo" class="img_note">
-                    <div class="caracteristicas">
-                        <p><strong>$84000</strong></p>
+            <div id="txtCantidadStock"></div>
+            <div id="product-list" class="grid-layout">
+                <div class="product">
+                     <!-- <h2 id="title" class="nombre"></h2>
+                    <img id="image_url" src="" alt="Imagen de notebook" class="img_note">
+                    <div id="descripcion" class="caracteristicas">
+                        <p id="price"><strong></strong></p>
                         <p> 6x $14000 sin interes</p>
                         <p class="envio">Envío gratis</p>
+                        <a id="factory_url" href="" target="_blank">WEB OFICIAL</a>
                         <button type="button" class="btn" onclick="redirection()">VER MAS</button>
-                    </div>
-                    <br>
-                    <hr>
-                </div>
-                <div class="pc2">
-                    <hr>
-                    <h2 class="nombre">Notebook Lenovo IdeaPad 15IIL05 </h2>
-                    <img src="img/lenovo.jpg" alt="compu_lenovo" class="img_note">
-                    <div class="caracteristicas">
-                        <p><strong>$84000</strong></p>
-                        <p> 6x $14000 sin interes</p>
-                        <p class="envio">Envío gratis</p>
-                        <button type="button" class="btn" onclick="redirection()">VER MAS</button>
-                    </div>
-                    <br>
-                    <hr>
-                </div>
-                <div class="pc3">
-                    <hr>
-                    <h2 class="nombre">Notebook Lenovo IdeaPad 15IIL05 </h2>
-                    <img src="img/lenovo.jpg" alt="compu_lenovo" class="img_note">
-                    <div class="caracteristicas">
-                        <p><strong>$84000</strong></p>
-                        <p> 6x $14000 sin interes</p>
-                        <p class="envio">Envío gratis</p>
-                        <button type="button" class="btn" onclick="redirection()">VER MAS</button>
-                    </div>
-                    <br>
-                    <hr>
-                </div>
-                <div class="pc4">
-                    <h2 class="nombre">Notebook Lenovo IdeaPad 15IIL05 </h2>
-                    <img src="img/lenovo.jpg" alt="compu_lenovo" class="img_note">
-                    <div class="caracteristicas">
-                        <p><strong>$84000</strong></p>
-                        <p> 6x $14000 sin interes</p>
-                        <p class="envio">Envío gratis</p>
-                        <button type="button" class="btn" onclick="redirection()">VER MAS</button>
-                    </div>
-                    <br>
-                    <hr>
-                </div>
-                <div class="pc5">
-                    <h2 class="nombre">Notebook Lenovo IdeaPad 15IIL05 </h2>
-                    <img src="img/lenovo.jpg" alt="compu_lenovo" class="img_note">
-                    <div class="caracteristicas">
-                        <p><strong>$84000</strong></p>
-                        <p> 6x $14000 sin interes</p>
-                        <p class="envio">Envío gratis</p>
-                        <button type="button" class="btn" onclick="redirection()">VER MAS</button>
-                    </div>
-                    <br>
-                    <hr>
-                </div>
-                <div class="pc6">
-                    <h2 class="nombre">Notebook Lenovo IdeaPad 15IIL05 </h2>
-                    <img src="img/lenovo.jpg" alt="compu_lenovo" class="img_note">
-                    <div class="caracteristicas">
-                        <p><strong>$84000</strong></p>
-                        <p> 6x $14000 sin interes</p>
-                        <p class="envio">Envío gratis</p>
-                        <button type="button" class="btn" onclick="redirection()">VER MAS</button>
-                    </div>
-                    <br>
-                    <hr>
+                    </div> -->
                 </div>
             </div>
             
         </section>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
