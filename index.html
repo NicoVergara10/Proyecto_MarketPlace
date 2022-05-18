@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script src="script.js" defer></script>
+    <script src="https://unpkg.com/vue@3"></script>
     <title>MarketPlace</title>
 </head>
 <body>
@@ -14,11 +15,11 @@
             <h1 class="titulo">
                 EL MERCADITO DEL CHINO
             </h1>
-            <p class="slogan"><span>BALATO, BALATO</span></p>
+            <p class="slogan"><span>BALATO  BALATO</span></p>
         </div>
     </header>
     <main>
-        <section class="contenedor" >
+        <section class="contenedor">
             <h2>PRODUCTOS</h2>
             <div id="txtCantidadStock"></div>
             <div id="product-list" class="grid-layout">
@@ -34,7 +35,22 @@
                     </div>
                 </div> -->
             </div>
-            
+            <div class="grid-layout" id="app">
+                <div v-for="producto in productos">
+                    <hr>
+                    <h1 class="nombre">{{producto.title}}</h1>
+                    <img :src="producto.image_url" alt="compu_xxx" class="img_note">
+                    <div class="caracteristicas">
+                        <h2 class="descripcion">CARACTERISTICAS</h2>
+                        <p id="description" class="texto">{{producto.description}}</p>
+                        <br>
+                        <a id="factory_url" :href="producto.factory_url" target="_blank">LINK OFICIAL</a>
+                        <br>
+                        <p id="price" class="precio">{{producto.price}}</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
         </section>
     </main>
 </body>
